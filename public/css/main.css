@@ -10,6 +10,7 @@ Variables para estilos asociados al titulo: Listas y mapas
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 .ttl {
   margin: 0px;
   padding: 0px;
@@ -91,24 +92,57 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  -ms-flex-line-pack: space-evenly;
-      align-content: space-evenly;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
 .boton li a {
-  font-size: 2rem;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: 300;
+  color: darkorange;
+  margin: 5%;
+}
+
+.boton li a:hover {
+  color: white;
+}
+
+button {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: darkorange;
+  cursor: pointer;
 }
 
 #formularios {

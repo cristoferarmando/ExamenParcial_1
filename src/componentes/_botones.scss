@@ -7,12 +7,26 @@
 
 .boton{
     width: 100%;
-    @include setflex(column, space-evenly, space-around);
+    @include setflex(row, space-evenly, space-around);
     align-items: flex-start;
 
     li{
         a{
-            font-size: 2rem;
+         @include setTittle('Lexend Deca', nth($listfonts, 3), 300);;
+         color:darkorange;
+         margin: 5%;
+
+        &:hover{
+        color: $light;
+    }
         }
     }
+}
+
+button{
+    width: 15%;
+    @include setflex(row, space-evenly, space-around);
+    align-items: flex-start;
+    color:darkorange;
+    cursor:pointer;
 }

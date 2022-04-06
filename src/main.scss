@@ -11,6 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&display=swap');
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
 //Estilos generales
 *{
     position: relative;
@@ -47,6 +49,7 @@ body{
     }
 }
 
+//Estilos de cada sección del grid
 .bg{
     background-color: $info;
     color:darkorange;
