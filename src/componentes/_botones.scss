@@ -1,0 +1,18 @@
+#botones{
+    grid-area: botones;
+    background-color: $info;
+    text-align: center;
+    padding: 1rem;
+}
+
+.boton{
+    width: 100%;
+    @include setflex(column, space-evenly, space-around);
+    align-items: flex-start;
+
+    li{
+        a{
+            font-size: 2rem;
+        }
+    }
+}

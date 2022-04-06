@@ -1,0 +1,19 @@
+//Titulos estilos generales
+.ttl{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: fit-content;
+
+    &-xl{
+        @include setTittle('Rubik Glitch', nth($listfonts, 1), bolder);
+    }
+
+    &-xm{
+        @include setTittle('Lexend Deca', nth($listfonts, 2), bold);
+    }
+
+    &-xs{
+        @include setTittle('Lexend Deca', nth($listfonts, 3), 300);
+    }
+}

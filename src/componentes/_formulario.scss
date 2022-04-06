@@ -1,0 +1,21 @@
+#formularios{
+    grid-area: formularios;
+    @include setflex(column);
+    padding-bottom: 1rem;
+
+    .formulario{
+        @include setflex (row, space-evenly);
+        padding: 1rem 0%;
+        width: 90%;
+    }
+
+    input{
+        box-sizing: border-box;
+        width: 50%;
+    }
+}
+
+textarea{
+    width: 90%;
+    margin: auto;
+}

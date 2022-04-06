@@ -1,0 +1,355 @@
+/**********************************************************
+                        Variables
+***********************************************************/
+/**********************************************************
+Variables para estilos asociados al titulo: Listas y mapas
+***********************************************************/
+/**********************************************************
+                        General
+***********************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@800&display=swap");
+.ttl {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.ttl-xl {
+  font-family: "Rubik Glitch";
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+.ttl-xm {
+  font-family: "Lexend Deca";
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.ttl-xs {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#galeria {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: galeria;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-flow: dense;
+  gap: 1rem;
+  padding: 0.5rem;
+  justify-items: center;
+}
+
+figure {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 3px 2px #b4b4b4;
+          box-shadow: 2px 2px 3px 2px #b4b4b4;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+figure:hover {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#photo1 {
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#botones {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: botones;
+  background-color: #0b5a52;
+  text-align: center;
+  padding: 1rem;
+}
+
+.boton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.boton li a {
+  font-size: 2rem;
+}
+
+#formularios {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: formularios;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+#formularios .formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1rem 0%;
+  width: 90%;
+}
+
+#formularios input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+}
+
+textarea {
+  width: 90%;
+  margin: auto;
+}
+
+* {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: dense;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "artevisual   photo1" "quienesomos  ourservicio" "ourcliente   galeria" "botones      formularios";
+}
+
+@media all and (max-width: 700px) {
+  body {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "artevisual" "photo1" "quienesomos" "ourservicio" "ourcliente" "galeria" "formularios" "botones";
+  }
+}
+
+.bg {
+  background-color: #0b5a52;
+  color: darkorange;
+}
+
+#artevisual {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: artevisual;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+  padding: 10%;
+}
+
+#artevisual h1 {
+  color: darkorange;
+  margin: 5%;
+}
+
+#artevisual p {
+  text-align: left;
+}
+
+#quienesomos {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: quienesomos;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding: 10%;
+}
+
+#quienesomos h2 {
+  margin: 5%;
+}
+
+#quienesomos p {
+  text-align: left;
+}
+
+#ourservicio {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: ourservicio;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding: 10%;
+}
+
+#ourservicio h2 {
+  margin: 5%;
+}
+
+#ourservicio p {
+  text-align: left;
+}
+
+#ourcliente {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ourcliente;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5%;
+  padding: 10%;
+}
+
+#ourcliente h2 {
+  color: darkorange;
+  margin: 5%;
+}
+
+#ourcliente p {
+  text-align: left;
+}
+
+#formularios {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: formularios;
+  font-family: 'Lexend Deca';
+}
+
+#formularios input {
+  font-family: 'Lexend Deca';
+}
+
+#formularios textarea {
+  font-family: 'Lexend Deca';
+}
+
+#formularios button {
+  font-family: 'Lexend Deca';
+}
+/*# sourceMappingURL=main.css.map */

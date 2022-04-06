@@ -1,0 +1,41 @@
+/**********************************************************
+                        Variables
+***********************************************************/
+$fontsize:10px;
+$primary:blue;
+$sucess:green;
+$warning:orange;
+$info:rgb(11, 90, 82);
+$danger:Red;
+$dark:black;
+$light:white;
+
+/**********************************************************
+Variables para estilos asociados al titulo: Listas y mapas
+***********************************************************/
+$listfonts: 45px, 25px, 15px;
+
+/**********************************************************
+                        General
+***********************************************************/
+@mixin setflex ($dir, $alignH: center, $alignV: center){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: wrap;
+    text-align: center;
+
+    @if ($dir ==column) {
+        align-content: $alignH;
+        justify-content: $alignV;
+    }
+    @else{
+        align-content: $alignV;
+        justify-content: $alignH;
+    }
+}
+//titulos
+@mixin setTittle ($font, $ize, $weight) {
+    font-family: $font;
+    font-size: $ize;
+    font-weight: $weight;
+}
