@@ -352,4 +352,14 @@ body {
 #formularios button {
   font-family: 'Lexend Deca';
 }
+
+#gale {
+  font-family: 'Lexend Deca';
+  color: darkorange;
+  margin: 5%;
+}
+
+#gale:hover {
+  color: #0b5a52;
+}
 /*# sourceMappingURL=main.css.map */
